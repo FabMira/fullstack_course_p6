@@ -5,24 +5,14 @@ const App = () => {
   const dispatch = useDispatch()
 
   const vote = (id) => {
-    console.log('vote', id)
-    dispatch({
-      type: 'VOTE',
-      data: {id}
-    })
+    dispatch( vote(id) )
   }
 
   const createAnecdote = (event) => {
     event.preventDefault()
     const content = event.target.anecdote.value
     event.target.anecdote.value = ''
-    dispatch({
-      type: 'CREATE',
-      payload: {
-        content
-      }
-    })
-
+    dispatch( createAnecdote(content) )
   }
 
   return (
