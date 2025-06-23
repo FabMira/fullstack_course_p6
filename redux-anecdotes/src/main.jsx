@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import App from './App'
 import store from './store'
-// import { createAnecdote, filterChange } from './reducers/reducers'
+
 
 console.log(store.getState());
 
