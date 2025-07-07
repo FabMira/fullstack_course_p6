@@ -3,12 +3,12 @@
     {
       "content": "If it hurts, do it more often",
       "id": "47145",
-      "votes": 17
+      "votes": 24
     },
     {
       "content": "Adding manpower to a late software project makes it later!",
       "id": "21149",
-      "votes": 1
+      "votes": 2
     },
     {
       "content": "The first 90 percent of the code accounts for the first 10 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.",
@@ -28,27 +28,47 @@
     {
       "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
       "id": "98312",
-      "votes": 10
+      "votes": 11
     },
     {
       "id": "6437",
       "content": "El que vino a Chile y no tomo vino a que vino",
-      "votes": 22
+      "votes": 23
     },
     {
       "id": "70e4",
       "content": "dsasdasdasd",
-      "votes": 1
+      "votes": 5
     },
     {
       "id": "a01b",
       "content": "parse",
-      "votes": 14
+      "votes": 18
     },
     {
       "id": "b5eb",
       "content": "baby you got me goin'",
-      "votes": 3
+      "votes": 8
+    },
+    {
+      "id": "c037",
+      "content": "Yo tengo el pico grande y te lo meto en el hocico",
+      "votes": 1
+    },
+    {
+      "id": "e3e2",
+      "content": "Yo te",
+      "votes": 0
+    },
+    {
+      "id": "0c64",
+      "content": "lorem ipsum",
+      "votes": 0
+    },
+    {
+      "id": "244f",
+      "content": "cuando deja de hacer arte",
+      "votes": 0
     }
   ]
 }

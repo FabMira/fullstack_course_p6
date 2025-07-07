@@ -3,7 +3,7 @@ import NotificationContext from "../notificationContext"
 
 const Notification = () => {
 
-  const { notification } = useContext(NotificationContext)
+  const [notification] = useContext(NotificationContext)
 
   const style = {
     border: 'solid',

@@ -5,17 +5,17 @@ import { useContext } from "react"
 import NotificationContext from "../notificationContext"
 
 const AnecdoteForm = () => {
-
+  
+  const [notification, notificationDispatch] = useContext(NotificationContext)
   const queryClient = useQueryClient()
-  const { notificationDispatch } = useContext(NotificationContext)
-
+  
   const mutation = useMutation({
     mutationFn: createAnecdote,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['anecdotes'] })
     }
   })
-
+  
   const onCreate = (event) => {
     event.preventDefault()
     const content = event.target.anecdote.value
