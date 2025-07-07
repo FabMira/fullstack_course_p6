@@ -14,13 +14,19 @@ const App = () => {
   const result = useQuery({
     queryKey: ['anecdotes'],
     queryFn: getAnecdotes,
-    retry: 1
+    retry: 1,
+    refetchOnWindowFocus: false,
   })
 
   const updateMutation = useMutation({
     mutationFn: updateAnecdote,
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ['anecdotes'] })
+    onSuccess: (newAnecdote) => {
+      // queryClient.invalidateQueries({ queryKey: ['anecdotes'] })
+      const anecdotes = queryClient.getQueryData(['anecdotes'])
+      queryClient.setQueryData(['anecdotes'], anecdotes.map(anecdote => 
+        anecdote.id === newAnecdote.id ? newAnecdote : anecdote
+      ))
+      // queryClient.setQueryData(['anecdotes'], anecdotes.concat(newAnecdote))
     }
   })
 
